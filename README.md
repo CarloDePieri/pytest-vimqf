@@ -1,4 +1,4 @@
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/carlodepieri/pytest-vimqf/CI?logo=github)](https://github.com/CarloDePieri/CarloDePieri/actions)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/carlodepieri/pytest-vimqf/CI?logo=github)](https://github.com/CarloDePieri/pytest-vimqf/actions)
 [![PyPI](https://img.shields.io/pypi/v/pytest-vimqf)](https://pypi.python.org/pypi/pytest-vimqf)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pytest-vimqf)](https://pypi.python.org/pypi/pytest-vimqf)
 [![Build system: poetry](https://img.shields.io/badge/build%20system-poetry-blue)](https://github.com/python-poetry/poetry)
