@@ -15,9 +15,10 @@ Pytest default terminal reporter calculates the available terminal width and
 organize its layout accordingly, often printing characters to the far right of
 the screen.
 
-When running pytest in vim (for example using [vim-dispatch](https://github.com/tpope/vim-dispatch)),
+When running pytest in vim (for example using [pytest-vim-compiler](https://github.com/CarloDePieri/pytest-vim-compiler)
+inside [vim-dispatch](https://github.com/tpope/vim-dispatch)),
 its output in the quickfix window will show a broken layout (since there
-actually are less columns available than pytest calculated).
+actually are fewer columns available than pytest calculated).
 
 This issue is exacerbated if `signcolumn` is set.
 
@@ -26,7 +27,7 @@ This issue is exacerbated if `signcolumn` is set.
 ## The solution
 
 Pytest-vimqf simply trick pytest's terminal reporter in thinking the terminal is
-slightly smaller. This will allows it to fit nicely in the vim quickfix window.
+slightly smaller. This allows it to fit nicely in the vim quickfix window.
 
 <img src="https://user-images.githubusercontent.com/5459291/107146686-04906380-694a-11eb-8610-57a9292f4ce3.png" width="400">
 
@@ -34,7 +35,7 @@ slightly smaller. This will allows it to fit nicely in the vim quickfix window.
 
 Install using pip:
 
-```bash
+```console
 # pip install pytest-vimqf
 ```
 
