@@ -1,0 +1,32 @@
+---
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - "master"
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: "Log level"
+        required: true
+        default: "warning"
+
+jobs:
+  build:
+    name: CI
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout.
+        uses: actions/checkout@v2
+
+      - name: Install poetry.
+        run: curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+
+      - name: Install the library.
+        run: ~/.poetry/bin/poetry install
+
+      - name: Run the tests.
+        run: ~/.poetry/bin/poetry run pytest tests

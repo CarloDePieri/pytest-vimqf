@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pytest_vimqf"
-version = "0.8.2"
+version = "0.8.0"
 description = "A simple pytest plugin that will shrink pytest output when specified, to fit vim quickfix window."
 
 license = "GPL-3.0-only"
@@ -31,7 +31,6 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.6"
-# toml = "^0.9"
 pytest = "^6.2.2"
 
 [tool.poetry.dev-dependencies]
